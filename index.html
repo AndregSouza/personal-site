@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>André Souza</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        $(function(){
+        var header = $('#menuHeader');
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 180) {
+            header.addClass("menu-fixo");
+          } else {
+            header.removeClass("menu-fixo");
+          }
+        });
+      });
+    </script>
+
+
+    <header id="menuHeader">
+      <a href="index.html"> <img src="images/Logo_Com_Quadrado.png" alt="Logo André Souza Design"> </a>
+      <nav >
+        <ul>
+          <li> <a href="index.html"> Projetos </a> </li>
+          <li> <a href="sobre.html"> Sobre e Contato </a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+        <h1> Projetos de André Souza </h1>
+        <h2> UI, UX &#38; Visual Designer </h2>
+        <a href="https://www.behance.net/gallery/58510077/Entrelinhas-Virtuais" target="_blank"> <img src="images/fakenews.png" alt="projeto 1"> </a>
+        <a href="https://www.behance.net/gallery/54485021/Andr-Souza-Personal-Branding" target="_blank"> <img src="images/branding.png" alt="projeto 1"> </a>
+        <a href="https://www.behance.net/gallery/48627035/Projeto-Payphone" target="_blank"> <img src="images/payphone.png" alt="projeto 1"> </a>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p> Contato </p>
+        <ul>
+          <li> <a href="mailto:andregsouzaweb@gmail.com"> <img src="images/icons/mail_icon.png" alt=""> </a> </li>
+          <li> <a href="https://www.linkedin.com/in/andre-souza/" target="_blank"> <img src="images/icons/linkedin_icon.png" alt=""> </a> </li>
+          <li> <a href="https://www.behance.net/andregsouza" target="_blank"> <img src="images/icons/behance_icon.png" alt=""> </a> </li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
